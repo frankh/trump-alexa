@@ -251,10 +251,10 @@ function resolve_aliases(tag) {
     var tags = [];
     for( var canonical_tag in TAG_ALIASES ) {
         if( TAG_ALIASES[canonical_tag].indexOf(tag) >= 0 || canonical_tag == tag ) {
-            tags.push(tag);
+            tags.push(canonical_tag);
         }
     }
-    return tags;
+    return Array.from(new Set(tags));
 }
 
 var Quotes = {
