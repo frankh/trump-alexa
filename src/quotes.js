@@ -266,7 +266,7 @@ var Quotes = {
     },
     getTaggedQuote: function(tag) {
         var tags = resolve_aliases(tag);
-        var potential_quotes = [];
+        var potential_quotes = new Set();
 
         for (var i = 0, len = QUOTES.length; i < len; i++) {
             var quote = QUOTES[i];
@@ -275,9 +275,10 @@ var Quotes = {
             });
 
             if( matching_tags.length > 0 ) {
-                potential_quotes.push(quote);
+                potential_quotes.add(quote);
             }
         }
+        potential_quotes = Array.from(potential_quotes)
         console.log("tagged quotes for " + tag + ", resolved to " + tags + ", potential_quotes: " + potential_quotes.length);
 
         if( potential_quotes.length == 0 ) {
