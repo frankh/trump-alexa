@@ -1,3 +1,5 @@
+import random from './random';
+
 var QUOTES = [
     {
         "quote": "An 'extremely credible source' has called my office and told me that Barack Obama's birth certificate is a fraud",
@@ -256,10 +258,11 @@ function resolve_aliases(tag) {
 }
 
 var Quotes = {
+    QUOTES: QUOTES,
     getQuote: function() {
-        var i = Math.floor(Math.random() * QUOTES.length);
-        var randomQuote = QUOTES[i];
+        var randomQuote = random.randomItem(QUOTES);
         return randomQuote["quote"];
+
     },
     getTaggedQuote: function(tag) {
         var tags = resolve_aliases(tag);
@@ -281,8 +284,7 @@ var Quotes = {
             return "I don't know about that";
         }
 
-        i = Math.floor(Math.random() * potential_quotes.length);
-        var randomQuote = potential_quotes[i];
+        var randomQuote = random.randomItem(potential_quotes);
         return randomQuote["quote"];
 
     }

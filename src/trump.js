@@ -24,6 +24,18 @@ export class Trump {
             }
         })
     }
+
+    @Intent('GetTaggedTrumpQuoteIntent')
+    getTaggedTrumpQuote(slots) {
+        var quote = Quotes.getTaggedQuote(slots.Tag);
+        return Response.build({
+            say: quote,
+            card: {
+                title: "Trump's Thought",
+                content: quote
+            }
+        })
+    }
 }
 
 export default Skill(Trump);
