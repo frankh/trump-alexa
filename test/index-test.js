@@ -1,17 +1,16 @@
-var Skill, { Trump } = require('../src/trump');
-var Request = require('alexa-request');
-var test = require('ava');
+import test from 'ava';
+import Skill, { Trump } from '../src/trump';
+import Request from 'alexa-request';
 
 test('LaunchRequest', t => {
   const event = Request.launchRequest().build();
-
   return Skill(event).then(response => {
     t.deepEqual(response, {
       version: '1.0',
       response: {
         shouldEndSession: false,
-        outputSpeech: { type: 'PlainText', text: 'I\'m Kanye, a fan made skill for Alexa. Do you want to hear Kanye\'s tweets?' },
-        reprompt: { outputSpeech: { type: 'PlainText', text: 'Do you want to hear Kanye\'s tweets?' } }
+        outputSpeech: { type: 'PlainText', text: 'I\'m a really smart person. Let me tell you something.' },
+        reprompt: { outputSpeech: { type: 'PlainText', text: '' } }
       }
     });
   });
