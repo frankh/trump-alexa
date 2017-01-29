@@ -16,8 +16,8 @@ var APP_ID = undefined; //OPTIONAL: replace with "amzn1.echo-sdk-ams.app.[your-u
 /**
  * The AlexaSkill prototype and helper functions
  */
-var AlexaSkill = require('./AlexaSkill');
-var Quotes = require('./quotes');
+var AlexaSkill = require("./AlexaSkill");
+var Quotes = require("./quotes");
 
 var Trump = function () {
     AlexaSkill.call(this, APP_ID);

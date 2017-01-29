@@ -1,0 +1,16 @@
+{
+  "name": "trump-alexa",
+  "version": "0.1.0",
+  "main": "src/index.js",
+  "repository": "git@bitbucket.org:shawabawa/trump-alexa.git",
+  "author": "Frank Hamand <frankhamand@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bestzip": "^1.1.3",
+    "eslint": "^3.14.1",
+    "eslint-plugin-standard": "^2.0.1"
+  },
+  "scripts": {
+    "lint": "eslint src/**/*.js"
+  }
+}

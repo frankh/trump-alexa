@@ -8,16 +8,16 @@
     or in the "license" file accompanying this file. This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
 */
 
-'use strict';
+"use strict";
 
 function AlexaSkill(appId) {
     this._appId = appId;
 }
 
 AlexaSkill.speechOutputType = {
-    PLAIN_TEXT: 'PlainText',
-    SSML: 'SSML'
-}
+    PLAIN_TEXT: "PlainText",
+    SSML: "SSML"
+};
 
 AlexaSkill.prototype.requestHandlers = {
     LaunchRequest: function (event, context, response) {
@@ -61,10 +61,10 @@ AlexaSkill.prototype.eventHandlers = {
             intentName = intentRequest.intent.name,
             intentHandler = this.intentHandlers[intentName];
         if (intentHandler) {
-            console.log('dispatch intent = ' + intentName);
+            console.log("dispatch intent = " + intentName);
             intentHandler.call(this, intent, session, response);
         } else {
-            throw 'Unsupported intent = ' + intentName;
+            throw "Unsupported intent = " + intentName;
         }
     },
 
@@ -115,16 +115,16 @@ var Response = function (context, session) {
 };
 
 function createSpeechObject(optionsParam) {
-    if (optionsParam && optionsParam.type === 'SSML') {
+    if (optionsParam && optionsParam.type === "SSML") {
         return {
             type: optionsParam.type,
             ssml: optionsParam.speech
         };
     } else {
         return {
-            type: optionsParam.type || 'PlainText',
+            type: optionsParam.type || "PlainText",
             text: optionsParam.speech || optionsParam
-        }
+        };
     }
 }
 
@@ -147,8 +147,8 @@ Response.prototype = (function () {
             };
         }
         var returnResult = {
-                version: '1.0',
-                response: alexaResponse
+            version: "1.0",
+            response: alexaResponse
         };
         if (options.session && options.session.attributes) {
             returnResult.sessionAttributes = options.session.attributes;
