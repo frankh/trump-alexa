@@ -14,13 +14,6 @@ GetTrumpQuoteIntent for guidance
 GetTrumpQuoteIntent for inspiration
 GetTrumpQuoteIntent for the truth
 
-GetTrumpTweetIntent tweet
-GetTrumpTweetIntent a tweet
-GetTrumpTweetIntent to tweet
-GetTrumpTweetIntent twitter
-GetTrumpTweetIntent for a tweet
-GetTrumpTweetIntent for a random tweet
-
 GetTaggedTrumpQuoteIntent about {Tag}
 GetTaggedTrumpQuoteIntent his thoughts on {Tag}
 GetTaggedTrumpQuoteIntent {Tag}

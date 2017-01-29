@@ -11,8 +11,6 @@
           "type": "QUOTE_TAGS"
         }
       ]
-    },{
-      "intent": "GetTrumpTweetIntent"
     },
     {
       "intent": "AMAZON.HelpIntent"
