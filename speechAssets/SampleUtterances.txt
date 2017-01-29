@@ -1,0 +1,30 @@
+GetTrumpQuoteIntent a quote
+GetTrumpQuoteIntent say something
+GetTrumpQuoteIntent a trump quote
+GetTrumpQuoteIntent tell me a quote
+GetTrumpQuoteIntent tell me a trump quote
+GetTrumpQuoteIntent give me a quote
+GetTrumpQuoteIntent give me a trump quote
+GetTrumpQuoteIntent tell me something
+GetTrumpQuoteIntent tell me a trumpism
+GetTrumpQuoteIntent trumpet me
+GetTrumpQuoteIntent trump me
+GetTrumpQuoteIntent for knowledge
+GetTrumpQuoteIntent for guidance
+GetTrumpQuoteIntent for inspiration
+GetTrumpQuoteIntent for the truth
+
+GetTrumpTweetIntent tweet
+GetTrumpTweetIntent a tweet
+GetTrumpTweetIntent to tweet
+GetTrumpTweetIntent twitter
+GetTrumpTweetIntent for a tweet
+GetTrumpTweetIntent for a random tweet
+
+GetTaggedTrumpQuoteIntent about {Tag}
+GetTaggedTrumpQuoteIntent his thoughts on {Tag}
+GetTaggedTrumpQuoteIntent {Tag}
+GetTaggedTrumpQuoteIntent say something {Tag}
+GetTaggedTrumpQuoteIntent tell me something {Tag}
+GetTaggedTrumpQuoteIntent tell me about {Tag}
+
