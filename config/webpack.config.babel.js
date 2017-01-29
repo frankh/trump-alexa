@@ -1,10 +1,9 @@
-var Path = require('path');
-var webpack = require('webpack');
-
+import Path from 'path';
+import webpack from 'webpack';
 
 const path = (...parts) => Path.join(__dirname, '..', ...parts);
 
-module.exports = {
+export default {
   entry: ['babel-polyfill', path('src', 'index.js')],
   target: 'node',
   output: {

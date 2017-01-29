@@ -1,5 +1,3 @@
-"use strict";
-
 var QUOTES = [
     {
         "quote": "An 'extremely credible source' has called my office and told me that Barack Obama's birth certificate is a fraud",
@@ -290,4 +288,4 @@ var Quotes = {
     }
 };
 
-module.exports = Quotes;
+export default Quotes;
