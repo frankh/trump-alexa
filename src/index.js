@@ -90,4 +90,3 @@ exports.handler = function (event, context) {
     var skill = new Trump();
     skill.execute(event, context);
 };
-

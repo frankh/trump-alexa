@@ -6,6 +6,8 @@
   "author": "Frank Hamand <frankhamand@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "alexa-request": "^0.2.1",
+    "ava": "^0.17.0",
     "babel-core": "^6.22.1",
     "babel-loader": "^6.2.10",
     "babel-polyfill": "^6.22.0",
