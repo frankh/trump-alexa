@@ -24,7 +24,7 @@
     "lint": "eslint src/**/*.js",
     "build": "webpack -p --config config/webpack.config.babel.js",
     "test": "ava",
-    "package": "bestzip build/package.zip build/index.js",
+    "package": "bestzip build/package.zip build/index.js"
   },
   "ava": {
     "require": [
